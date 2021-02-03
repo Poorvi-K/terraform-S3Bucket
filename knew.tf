@@ -19,6 +19,7 @@ locals {
 }
 
 
+
 resource "random_integer" "rand" {
   min= "98"
   max = "101"
@@ -26,6 +27,7 @@ resource "random_integer" "rand" {
 }
 
 
+#######CREATING S3 BUCKET########
 
 
   resource "aws_s3_bucket" "web_bucket" {
@@ -43,7 +45,7 @@ resource "random_integer" "rand" {
   }
   }
 
-
+###CREATE S3 LOG Bucket####
 
 
 resource "aws_s3_bucket" "log_bucket" {
